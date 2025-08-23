@@ -1,0 +1,47 @@
+h1{
+    color: blue;
+    font-size: 25px;
+    text-shadow: 0px 0px 5px black;
+
+    transition-property: color,text-shadow;
+    transition-duration: 500ms,1s;
+    transition-timing-function: ease-in-out,linear;
+    transition-delay: 3ms,0s;
+}
+h1:hover{
+    color: chocolate;
+    text-shadow: -10px 0px 5px red;
+}
+.circulo{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: green;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    animation-name: rebote;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 4;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes rebote {
+   /* from{
+        top: 0px;
+    }
+    to{
+        top: 100vh;
+    }*/
+    0%{
+        top: 0px;
+    }
+    50%{
+        width: 125px;
+        height: 125px;
+    }
+    100%{
+        top: 100vh;
+    }
+}
