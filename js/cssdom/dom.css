@@ -1,0 +1,21 @@
+.modal{
+    width: 250px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 16px;
+    background-color: red;
+    position: fixed;
+    bottom: -200px;
+    left: calc(50% - 125px);
+
+    transition-property: bottom;
+    transition-duration: 40ms;
+    transition-timing-function: linear;
+}
+.modal p{
+    color: aliceblue;
+}
+.modal.show{
+    bottom: 20px;
+
+}

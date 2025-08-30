@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssdom/dom.css">
+</head>
+<body>
+    <h1 id="tituloPrincipal">
+        Hola mundo!!!!!
+    </h1>
+        <button onclick="alert(2+2)">Sumar</button>
+        <button onclick="alert(5,2)">Sumar 1</button>
+        <button id="sumar-btn">Sumar 3</button>
+   <br><br>
+
+   <form name="sumarForm">
+    <input type="number" name="num-1">
+    <span> + </span>
+    <input type="number" name="num-2">
+    <button type="submit">calcular</button>
+   </form>
+   <div id="historial">
+   </div>
+
+   <div id="error-msg" class="modal">
+    <p>
+        Debe ingresar sólo números mayores que cero
+    </p>
+   </div>
+<script src="dom.js"></script>
+    
+</body>
+</html>
